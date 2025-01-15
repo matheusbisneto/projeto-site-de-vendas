@@ -1,0 +1,15 @@
+.sobre-container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 0 20px;
+    text-align: justify;
+  }
+
+  .sobre-container img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 20px auto;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+  }

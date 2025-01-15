@@ -1,0 +1,40 @@
+#mapa {
+    height: 300px; 
+    margin-top: 20px;
+  }
+
+  .formulario-contato {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
+  .formulario-contato label {
+    font-weight: bold;
+  }
+
+  .formulario-contato input[type="text"],
+  .formulario-contato input[type="email"],
+  .formulario-contato textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+
+  .formulario-contato textarea {
+    height: 150px;
+  }
+
+  .formulario-contato button {
+    background-color: #c5b78e;
+    color: white;
+    padding: 10px 10px;
+    cursor: pointer;
+    border-radius: 10px;
+  }
+
+  .formulario-contato button:hover {
+    background-color: #a89f7b;
+  }

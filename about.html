@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GEUM STORE - Sobre</title>
+  <link rel="stylesheet" href="about.css">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+
+<header>
+    <nav class="navbar">
+      <img src="imagens/logo-1 gold version.png" alt="about" class="logo">
+      <form id="searchForm">
+        <input type="text" id="searchInput" placeholder="Pesquisar por produtos...">
+        <button type="submit">Pesquisar</button>
+      </form>
+      <a href="index.html"><img src="imagens/icons8-casa-50.png" alt="Home">Home</a>
+      <a href="contato.html"><img src="imagens/icons8-conversa-64.png" alt="Contato">Contato</a>
+      <a href="about.html"><img src="imagens/icons8-informações-50.png" alt="Sobre">Sobre</a>
+      <a><img src="imagens/icons8-carrinho-50.png" alt="Carrinho">Carrinho</a>
+    </nav>
+  </header>
+  <hr>
+
+<body>
+
+  <section id="sobre" class="container sobre-container">
+    <h2>Sobre a GEUM STORE</h2>
+    <p><strong>História:</strong> A GEUM STORE surgiu da necessidade de atender os consumidores apaixonados por jogos eletrônicos, uma comunidade que cresce cada vez mais. Desde o início, nosso objetivo foi reunir os melhores produtos do mercado internacional para oferecer aos nossos clientes, garantindo qualidade e preços acessíveis.</p>
+    
+    <p><strong>Missão:</strong> Nossa missão é trazer os melhores produtos internacionais para o Brasil, proporcionando uma experiência de compra única e acessível, sempre buscando superar as expectativas dos nossos clientes.</p>
+    
+    <p><strong>Visão:</strong> Na GEUM STORE, visamos aproximar os fãs de e-sports das suas franquias favoritas através de produtos de alta qualidade, permitindo que eles se sintam mais conectados e engajados com o universo dos jogos eletrônicos.</p>
+
+    <img src="imagens/0.png" alt="Imagem da GEUM STORE">
+
+    <p>Além de oferecer produtos de qualidade, estamos comprometidos em proporcionar um excelente atendimento ao cliente, garantindo uma experiência de compra satisfatória em todos os aspectos.</p>
+  </section>
+
+  <hr>
+
+  <footer class="container">
+    <p>&copy; 2024 GEUM STORE. Todos os direitos reservados.</p>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+  <script>
+    document.getElementById('searchForm').addEventListener('submit', function (event) {
+      event.preventDefault();
+
+      var searchTerm = document.getElementById('searchInput').value.toLowerCase();
+
+      var produtos = document.querySelectorAll('.produto');
+
+      produtos.forEach(function (produto) {
+        var descricao = produto.querySelector('p').textContent.toLowerCase();
+
+        if (descricao.includes(searchTerm)) {
+          produto.style.display = 'block';
+        } else {
+          produto.style.display = 'none';
+        }
+      });
+
+      document.getElementById('searchInput').value = '';
+    });
+  </script>
+
+</body>
+
+</html>

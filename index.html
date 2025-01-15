@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GEUM STORE</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+
+<header>
+  <nav class="navbar">
+    <img src="imagens/logo-1 gold version.png" alt="about" class="logo">
+    <form id="searchForm">
+      <input type="text" id="searchInput" placeholder="Pesquisar por produtos...">
+      <button type="submit">Pesquisar</button>
+    </form>
+    <a href="index.html"><img src="imagens/icons8-casa-50.png" alt="Home">Home</a>
+    <a href="contato.html"><img src="imagens/icons8-conversa-64.png" alt="Contato">Contato</a>
+    <a href="about.html"><img src="imagens/icons8-informações-50.png" alt="Sobre">Sobre</a>
+    <a><img src="imagens/icons8-carrinho-50.png" alt="Carrinho">Carrinho</a>
+  </nav>
+</header>
+
+<hr>
+<body>
+
+  <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+      <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+    </ol>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="imagens/0.png" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="imagens/1.png" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="imagens/2.png" class="d-block w-100" alt="...">
+      </div>
+
+      <div class="carousel-item">
+        <img src="imagens/3.png" class="d-block w-100" alt="...">
+      </div>
+
+    </div>
+    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+  <hr>
+
+  <nav id="nav-baixo">
+    <a href="#" data-filter="todos">Todos</a>
+    <a href="#" data-filter="figure">Figures</a>
+    <a href="#" data-filter="estatueta">Estatuetas</a>
+    <a href="#" data-filter="almofadas">Almofadas</a>
+    <a href="#" data-filter="pelucias">Pelúcias</a>
+    <a href="#" data-filter="camisetas">Camisetas</a>
+  </nav>
+
+
+  <section id="produtos" class="grid-container">
+
+    <div class="produto" id="produto-1" data-categoria="estatueta">
+      <img src="imagens/produto 1 frente.jpg" alt="Produto 1">
+      <h3>AHRI 26CM LEAGUE OF LEGENDS EDIÇÃO ESPECIAL UNLOCKED - ACTION FIGURE</h3>
+      <p>Trazemos a raposa de 9 caudas em sua primeira forma clássica, linda, elegante e cheia de magia, a nossa querida
+        campeã Ahri do Lol (League of Legends)!</p>
+      <p style="color: #3CB371;">Disponível</p>
+      <p>R$ 2.799,90</p>
+      <button id="comprar-1" onclick="abrirProduto1()">Comprar</button>
+    </div>
+
+    <div class="produto" id="produto-2" data-categoria="pelucias">
+      <img src="imagens/produto 2.png" alt="Produto 2">
+      <h3>Dan O Penguim Pelucia Larga</h3>
+      <p>Indiscutivelmente o atirador mais preciso de todos os Tactifriends, Dan, o Pinguim, pode ser frequentemente
+        encontrado no Range (e mais recentemente na academia dos Tactifriends) trabalhando para aprimorar suas
+        habilidades
+        com o Operador.</p>
+      <p style="color: #A52A2A">Esgotado</p>
+      <p>R$122.584 </p>
+      <button>Comprar</button>
+    </div>
+
+    <div class="produto" id="produto-3" data-categoria="camisetas">
+      <img src="imagens/produto 3.jpg" alt="Produto 3">
+      <h3>Camiseta LOL 2023 BLG Team uniforme TEE LPL Bilibili Gaming unissex esportiva</h3>
+      <p>A escolha perfeita para os fãs do e-sports! A camiseta LOL 2023 BLG Team Uniforme TEE LPL Bilibili Gaming é um
+        produto esportivo unissex que combina estilo e funcionalidade. Inspirada no time chinês de League of Legends, a
+        Bilibili Gaming, essa camiseta é projetada para oferecer conforto e movimento livre.</p>
+      <p style="color: #A52A2A">Esgotado</p>
+      <p>R$162,39</p>
+      <button>Comprar</button>
+    </div>
+
+    <div class="produto" id="produto-4" data-categoria="figure">
+      <img src="imagens/produto 4.jpg" alt="Produto 4">
+      <h3>KDA Ahri - "A Deusa Raposa do Rift"</h3>
+      <p>Prepare-se para invocar os poderes misteriosos e sedutores do KDA Ahri Função Pop!"</p>
+      <p style="color: #A52A2A">Esgotado</p>
+      <p>R$375,87</p>
+      <button>Comprar</button>
+    </div>
+
+    <div class="produto" id="produto-5" data-categoria="almofadas">
+      <img src="imagens/produto 5.jpg" alt="Produto 5">
+      <h3>Valorant almofada azul graffiti</h3>
+      <p>Sage valorant azul graffiti tag design travesseiro almofada lance capa de linho algodão linho valorant sálvia
+        valorant faca oceano azul</p>
+      <p style="color: #A52A2A">Esgotado</p>
+      <p>R$30,39</p>
+      <button>Comprar</button>
+    </div>
+
+    <div class="produto" id="produto-6" data-categoria="camisetas">
+      <img src="imagens/produto 6.jpg" alt="Produto 6">
+      <h3>Jaquetas masculinas T1 2023 Oficial Jaqueta de Primavera Uniforme LCK S13 LOL</h3>
+      <p>Jaqueta de impressão faker lol lck skt t1 e-sport uniforme da equipe jogador camisa casaco preto longo</p>
+      <p style="color: #A52A2A">Esgotado</p>
+      <P>R$323,67</P>
+      <button>Comprar</button>
+    </div>
+  </section>
+
+  <footer class="container">
+    <p>&copy; 2024 GEUM STORE. Todos os direitos reservados.</p>
+  </footer>
+
+  <script>
+function abrirProduto1() {
+  window.open('produto.html', '_blank');
+}
+  </script>
+
+  <script>
+    document.getElementById('searchForm').addEventListener('submit', function (event) {
+      event.preventDefault();
+
+      var searchTerm = document.getElementById('searchInput').value.toLowerCase();
+
+      var produtos = document.querySelectorAll('.produto');
+
+      produtos.forEach(function (produto) {
+        var descricao = produto.querySelector('p').textContent.toLowerCase();
+
+        if (descricao.includes(searchTerm)) {
+          produto.style.display = 'block';
+        } else {
+          produto.style.display = 'none';
+        }
+      });
+
+      document.getElementById('searchInput').value = '';
+    });
+  </script>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const produtos = document.querySelectorAll('.produto');
+
+
+      function filtrarProdutos(categoria) {
+        produtos.forEach(function (produto) {
+          const categoriaProduto = produto.getAttribute('data-categoria');
+
+          if (categoria === 'todos' || categoriaProduto === categoria) {
+            produto.style.display = 'block';
+          } else {
+            produto.style.display = 'none';
+          }
+        });
+      }
+
+
+      const linksCategoria = document.querySelectorAll('#nav-baixo a');
+
+      linksCategoria.forEach(function (link) {
+        link.addEventListener('click', function (event) {
+          event.preventDefault();
+          const categoria = link.getAttribute('data-filter');
+          filtrarProdutos(categoria);
+        });
+      });
+    });
+
+  </script>
+
+  <script>
+
+  </script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>
